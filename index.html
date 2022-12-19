@@ -1,17 +1,10 @@
-<!-- Width-adjusting textbox for filename
-    Stationary filename container while scrolling
-    Logo as link
-    Filename editing icon
-    Canvas is not being used currently for page text content
-    
--->
 
 <!DOCTYPE html>
 <html>
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Documents</title>
+        <title>Docs</title>
         <link rel="icon" type="image/x-icon" href="favicon.png">
         <meta name="description" content="Online word editor project">
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -43,52 +36,53 @@
                 </div>
                 <div class="bottomtoolbar container row d-flex">
                     <div class="toolbox col col-auto">
-                        <button class="toolbuttons">
+                        <button class="toolbuttons" id="bold">
                             <i class="fa-solid fa-bold"></i>
                         </button>
-                        <button class="toolbuttons">
+                        <button class="toolbuttons" id="italics">
                             <i class="fa-solid fa-italic"></i>
                         </button>
-                        <button class="toolbuttons">
+                        <button class="toolbuttons" id="underline">
                             <i class="fa-solid fa-underline"></i>
                         </button>
                     </div>
                     <div class="toolbox col col-auto">
-                        <button class="toolbuttons">
+                        <button class="toolbuttons" id="leftAlign">
                             <i class="fa-solid fa-align-left"></i>
                         </button>
-                        <button class="toolbuttons">
+                        <button class="toolbuttons" id="centerAlign">
                             <i class="fa-solid fa-align-center"></i>
                         </button>
                         <button class="toolbuttons">
-                            <i class="fa-solid fa-align-right"></i>
+                            <i class="fa-solid fa-align-right" id="rightAlign"></i>
                         </button>
-                        <button class="toolbuttons">
+                        <button class="toolbuttons" id="justifyAlign">
                             <i class="fa-solid fa-align-justify"></i>
                         </button>
                     </div>   
                     <div class=" download-container dropdown col d-flex align-items-center justify-content-end">
                         <button class="btn btn-outline-dark dropdown-toggle" type="button" id="downloadbutton" data-bs-toggle="dropdown" aria-expanded="false">
-                          Download
+                            Download
                         </button>
                         <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                          <li><a class="dropdown-item" href="#">PDF file</a></li>
-                          <li><a class="dropdown-item" href="#">TXT file</a></li>
+                            <li><a class="dropdown-item" href="#">PDF file</a></li>
+                            <li><a class="dropdown-item" href="#" id="downloadtxt">TXT file</a></li>
                         </ul>
-                      </div>
+                    </div>
                     
                 </div>
             </div>
 
-            <div class="txtcontainer container row d-flex" contenteditable="true">
-                <!-- <canvas id="canvas-area" contenteditable="true">
-                    ,hghg
-                </canvas> -->
-                
+            <div class="txtcontainer container row d-flex">
+                <textarea id="textarea1" class="" name="name" placeholder="Your text here "></textarea>
             </div>
+                
+            
 
         </div>
 
+        <!-- <script src="//cdn.quilljs.com/1.3.6/quill.js"></script>
+        <script src="//cdn.quilljs.com/1.3.6/quill.min.js"></script> -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
         <script src="script.js" async defer></script>
     </body>

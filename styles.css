@@ -44,6 +44,7 @@ body{
     background-color: #dbe2efc4;
 }
 
+
 .toolbox{
     padding: 0;
     padding-right: 10px;
@@ -52,7 +53,9 @@ body{
     border-width: 0 0.5px;
 
 }
-
+.active{
+    background-color: #dbe2ef;
+}
 /* #downloadbutton:hover{
     background-color: #DBE2EF;
     color: black;
@@ -66,7 +69,13 @@ body{
     margin-bottom: 5%;
     padding: 2%;
     outline: none;
-    min-height: 500px;
+    min-height:fit-content;
+}
+
+#textarea1{
+    min-height: 700px;
+    padding: 2%;
+    resize: none;
 }
 
 #logo{
